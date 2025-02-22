@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashish Rogannagari - Data Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 🌟 Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+        <p class="loading-text" id="loading-message"></p>
+    </div>
+    <!-- 🌟 Navbar -->
+    <nav class="navbar">
+        <div class="nav-hover-line"></div>
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo">Aashish Rogannagari</a>
+                <ul class="nav-links">
+                    <li><a href="#about">Profile</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🌟 Hero Section -->
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- 🌟 Profile Picture -->
+                <img src="assets/images/profile.png" alt="Aashish Rogannagari" class="profile-pic">
+
+                <!-- 🌟 Name & Typing Effect -->
+                <h1>Aashish Rogannagari</h1>
+                <h2 id="typing-text"></h2>
+
+                <!-- 🌟 Social Links -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/aashishroganagari/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:aashish.roganagari5@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+1-347-389-4273">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+<main>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Profile</h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <p class="about-text">
+                        AWS Certified Data Engineer with 4 years of experience in cloud computing, data engineering, and
+                        scalable data pipelines. With expertise in AWS-native services, I specialize in building and
+                        optimizing high-performance cloud architectures that support large-scale analytics, business
+                        intelligence, and AI-driven solutions.
+                    </p>
+                    <p class="about-text">
+                        I have hands-on experience in SQL and Python for data transformation, querying, and
+                        optimization, as
+                        well as ETL workflows using AWS Glue and Step Functions for automated batch and real-time data
+                        processing. My expertise in AWS Redshift and Snowflake enables efficient data warehousing and
+                        analytics, while Git and streamline deployment and infrastructure automation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <h3>Data Engineer</h3>
+                    <h4>HELIX - HYDERABAD </h4>
+                    <p class="date">Sep 2020 - Jun 2023</p>
+                    <ul class="responsibilities">
+                        <li>Automated data pipelines, reducing data processing time by 40% and ensuring consistency
+                            across systems.</li>
+                        <li>Designed and implemented cloud infrastructure using AWS services such as EC2, Lambda,
+                            and RDS.</li>
+                        <li>Built an event-driven architecture with AWS Lambda & Step Functions, enabling real-time
+                            processing of
+                            thousands of daily events.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Data Engineer Associate</h3>
+                    <h4>HELIX - HYDERABAD</h4>
+                    <p class="date">Sep 2019 - Aug 2020</p>
+                    <ul class="responsibilities">
+                        <li>Developed & Automated ETL pipelines in AWS Glue, integrating 10+ data sources, reducing
+                            manual
+                            processing..</li>
+                        <li>Optimized SQL queries using indexing, materialized views, and partitioning,
+                            significantly improving execution
+                            speed by 2-3x.</li>
+                        <li>Collaborated in Redshift query tuning, reducing report generation time for BI dashboards
+                            by 60%.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section id="Projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="experience-grid">
+                    <div class="experience-item">
+                        <h3>Sheet Buddy – Open-Source Python Library</h3>
+                        <h4>Creator</h4>
+                        <p class="date">July 2024 - Present</p>
+                        <ul class="responsibilities">
+                            <li>Developing and scaling Sheet Buddy, Automating EDA, data transformation, and Excel
+                                reporting.</li>
+                            <li>Serving <span id="pypi-downloads">Loading...</span> users, streamlining workflows and
+                                reducing analysis time by 50%.</li>
+                            <li>Enhancing automation with dynamic styling, interactive heatmaps, statistical insights,
+                                and high-performance Excel exports.</li>
+                        </ul>
+
+                        <!-- 🔥 PyPI Tech Stats from Pepy.tech -->
+                        <div class="pypi-stats">
+                            <img src="https://pepy.tech/badge/sheetbuddy" alt="Total PyPI Downloads">
+                            <img src="https://img.shields.io/pypi/v/sheetbuddy" alt="Latest Version">
+                        </div>
+
+                        <!-- 🔥 GitHub Repo Stats -->
+                        <div class="repo-stats">
+                            <img src="https://img.shields.io/github/stars/AshishRogannagari/SheetBuddy?style=social"
+                                alt="GitHub Stars">
+                            <img src="https://img.shields.io/github/issues/AshishRogannagari/SheetBuddy"
+                                alt="GitHub Issues">
+                            <img src="https://img.shields.io/pypi/pyversions/sheetbuddy"
+                                alt="Supported Python Versions">
+                        </div>
+
+
+
+                        <!-- 🔥 Buttons: Google Colab & Jupyter -->
+                        <div class="project-buttons">
+                            <a href="https://colab.research.google.com/github/AshishRogannagari/SheetBuddy/blob/main/demo/example_notebook_file.ipynb"
+                                class="btn small-btn colab-btn" target="_blank">
+                                <i class="fab fa-google"></i> Colab
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/AshishRogannagari/SheetBuddy/blob/main/demo/example_notebook_file.ipynb"
+                                class="btn small-btn jupyter-btn" target="_blank">
+                                <i class="fas fa-book-open"></i> Jupyter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="experience-grid">
+                    <div class="experience-item">
+                        <h3>Master's in Data Analytics & Visualization</h3>
+                        <h4>Yeshiva University, New York City, NY</h4>
+                        <p class="date">Sep 2023 - Present</p>
+                        <ul class="responsibilities"></ul>
+                    </div>
+        </section>
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="experience-grid">
+                    <div class="experience-item">
+                        <h3>Cloud Platforms</h3>
+                        <ul class="responsibilities">
+                            <li>AWS </li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Data Engineering & ETL</h3>
+                        <ul class="responsibilities">
+                            <li> AWS Glue, Apache Airflow, ETL/ELT, Batch & Real-time
+                                Processing, Star
+                                Schema, Snowflake
+                                Schema,
+                                Slowly Changing Dimensions, AWS Redshift, Snowflake, AWS S3,
+                                Parquet, ORC
+                            </li>
+                            <li>SQL</li>
+                            <li>ETL Pipelines</li>
+                            <li>Data Warehousing , Data Modeling </li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Data & Analytics</h3>
+                        <ul class="responsibilities">
+                            <li>Data Warehousing, Data Streaming, Workflow Orchestration,
+                                Tableau, Power BI
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Form -->
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i>
+                            <a href="mailto:aashish.rogannagari5@gmail.com">aashish.roganagari5@gmail.com</a>
+                        </p>
+                        <p><i class="fas fa-phone"></i>
+                            <a href="tel:+1-347-389-4273">+1 347-389-4273</a>
+                        </p>
+                        <p><i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/aashishrogannagari/"
+                                target="_blank">linkedin.com/in/aashishrogannagari</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Floating Contact Button -->
+                <button id="contact-button"><i class="fas fa-comment-alt"></i> Contact Me</button>
+
+            </div>
+        </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <!-- Dynamic Copyright & Contact -->
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Aashish Rogannagari. All rights reserved.</p>
+            <p id="visitor-count">Visitors: <span id="count">...</span></p>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/aashishrogannagari/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/AshishRogannagari" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://medium.com/@ashishrogannagari" target="_blank" class="social-icon">
+                <i class="fab fa-medium"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Back to Top Button -->
+<button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+
+</html>
