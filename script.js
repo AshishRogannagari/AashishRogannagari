@@ -145,23 +145,28 @@ async function fetchPyPiDownloads() {
     }
 }
 fetchPyPiDownloads();
+
 document.addEventListener("DOMContentLoaded", function () {
     // 📅 Auto Update Year
     document.getElementById("current-year").textContent = new Date().getFullYear();
 
-    // 🌍 Simple Visitor Counter
+    // 🌍 Randomized Visitor Counter (230 - 5000)
     const visitorKey = "visitorCount";
     let count = localStorage.getItem(visitorKey);
 
+    // Generate a random increment between 230 and 5000
+    let randomIncrement = Math.floor(Math.random() * (3000 - 230 + 1)) + 230;
+
     if (!count) {
-        count = 1; // First-time visitor
+        count = randomIncrement; // First-time visitor gets a random count
     } else {
-        count = parseInt(count) + 1;
+        count = parseInt(count) + randomIncrement; // Increment by random value
     }
 
     localStorage.setItem(visitorKey, count);
-    document.getElementById("count").textContent = count;
+    document.getElementById("count").textContent = count; // Update the visitor count
 });
+
 
 
 
