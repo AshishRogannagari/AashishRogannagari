@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+//... other JavaScript code...
+
 document.addEventListener("DOMContentLoaded", function () {
     const contactButton = document.getElementById("contact-button");
     const contactForm = document.getElementById("contact-form");
@@ -31,18 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
     contactForm.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        // Get form values
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
+        // Formspree handles the submission, so you don't need the alert or form reset here
 
-        // Simulated form submission (Replace with backend logic if needed)
-        alert(`Thanks for reaching out, ${name}! I’ll get back to you soon.`);
-
-        // Clear the form
-        contactForm.reset();
     });
 });
+
+//... other JavaScript code...
 document.addEventListener("DOMContentLoaded", function () {
     const backToTop = document.getElementById("back-to-top");
 

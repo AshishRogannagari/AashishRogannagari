@@ -228,15 +228,15 @@
 
                 <div class="contact-wrapper">
                     <!-- Contact Form -->
-                    <form id="contact-form">
+                    <form id="contact-form" action="https://formspree.io/f/meoedkqj" method="POST">
                         <div class="form-group">
-                            <input type="text" id="name" placeholder="Your Name" required>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" placeholder="Your Email" required>
+                            <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" placeholder="Your Message" required></textarea>
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
                         </div>
                         <button type="submit" class="btn">Send Message</button>
                     </form>
@@ -255,7 +255,6 @@
                         </p>
                     </div>
                 </div>
-
                 <!-- Floating Contact Button -->
                 <button id="contact-button"><i class="fas fa-comment-alt"></i> Contact Me</button>
 
