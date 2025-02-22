@@ -20,8 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-//... other JavaScript code...
-
 document.addEventListener("DOMContentLoaded", function () {
     const contactButton = document.getElementById("contact-button");
     const contactForm = document.getElementById("contact-form");
@@ -33,25 +31,18 @@ document.addEventListener("DOMContentLoaded", function () {
     contactForm.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        // Formspree handles the submission, so you don't need the alert or form reset here
+        // Get form values
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
 
+        // Simulated form submission (Replace with backend logic if needed)
+        alert(`Thanks for reaching out, ${name}! I’ll get back to you soon.`);
+
+        // Clear the form
+        contactForm.reset();
     });
 });
-contactForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    // Get form values (you can remove this part too if you don't need it)
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-});
-contactForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    // Formspree handles the submission, so you don't need the alert or form reset here
-});
-
-//... other JavaScript code...
 document.addEventListener("DOMContentLoaded", function () {
     const backToTop = document.getElementById("back-to-top");
 
@@ -154,39 +145,22 @@ async function fetchPyPiDownloads() {
     }
 }
 fetchPyPiDownloads();
-
 document.addEventListener("DOMContentLoaded", function () {
     // 📅 Auto Update Year
     document.getElementById("current-year").textContent = new Date().getFullYear();
-
-    // 🌍 Randomized Visitor Counter (230 - 5000)
     const visitorKey = "visitorCount";
     let count = localStorage.getItem(visitorKey);
-
-    // Generate a random increment between 230 and 5000
     let randomIncrement = Math.floor(Math.random() * (3000 - 230 + 1)) + 230;
 
     if (!count) {
+        count = 1; // First-time visitor
         count = randomIncrement; // First-time visitor gets a random count
     } else {
+        count = parseInt(count) + 1;
         count = parseInt(count) + randomIncrement; // Increment by random value
     }
 
     localStorage.setItem(visitorKey, count);
+    document.getElementById("count").textContent = count;
     document.getElementById("count").textContent = count; // Update the visitor count
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
