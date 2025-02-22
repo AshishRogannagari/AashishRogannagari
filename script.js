@@ -37,6 +37,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 });
+contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Get form values (you can remove this part too if you don't need it)
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+});
+contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Formspree handles the submission, so you don't need the alert or form reset here
+});
 
 //... other JavaScript code...
 document.addEventListener("DOMContentLoaded", function () {
