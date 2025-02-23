@@ -835,3 +835,31 @@ footer {
     transform: scale(1.05);
     box-shadow: 0px 4px 12px rgba(243, 119, 38, 0.5);
 }
+
+/* new lines for template usage*/
+.portfolio-btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.portfolio-btn:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* new time and greeting*/
+.footer-greeting {
+    display: flex;
+    gap: 10px;
+    /* Space between items */
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
