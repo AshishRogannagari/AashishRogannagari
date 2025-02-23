@@ -91,6 +91,41 @@ window.addEventListener("load", function () {
     const preloader = document.getElementById("preloader");
     const loadingMessage = document.getElementById("loading-message");
 
+    // Function to get greeting based on time
+    // Function to get dynamic greeting with day-based messages and personal branding
+    function getGreeting() {
+        const now = new Date();
+        const hour = now.getHours();
+        const day = now.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+
+        let greeting = "";
+
+        // Time-based greeting
+        if (hour < 12) {
+            greeting = "Good Morning! ☀️";
+        } else if (hour < 18) {
+            greeting = "Good Afternoon! 🌤️";
+        } else {
+            greeting = "Good Evening! 🌙";
+        }
+
+        // Add day-specific greetings
+        const dayGreetings = {
+            0: "Relax, it's Sunday! ☕",
+            1: "Happy Monday! Let's start strong. 💪",
+            2: "It's Tuesday! Keep pushing forward. 🚀",
+            3: "Midweek hustle! Happy Wednesday. 📊",
+            4: "Almost there! Happy Thursday. 🔥",
+            5: "It's Friday! Time to wrap up the week. 🎉",
+            6: "Weekend vibes! Happy Saturday. 🌴"
+        };
+        greeting += ` ${dayGreetings[day]}`;
+
+
+        return greeting;
+    }
+
+
     // Fun facts about you (Change/add more as needed)
     const funFacts = [
         "Data is the new oil, and I refine it! 🛢️📊",
@@ -104,7 +139,9 @@ window.addEventListener("load", function () {
 
     // Pick a random message
     const randomMessage = funFacts[Math.floor(Math.random() * funFacts.length)];
-    loadingMessage.innerText = randomMessage;
+
+    // Display greeting on one line and fun fact on the next line
+    loadingMessage.innerHTML = `${getGreeting()}<br>${randomMessage}`;
 
     // Ensure preloader stays for at least 1.5 seconds
     setTimeout(() => {
@@ -113,8 +150,9 @@ window.addEventListener("load", function () {
         setTimeout(() => {
             preloader.style.display = "none";
         }, 500);
-    }, 1500);
+    }, 1700);
 });
+
 const sections = document.querySelectorAll(".section");
 
 function revealSections() {
@@ -150,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("current-year").textContent = new Date().getFullYear();
     const visitorKey = "visitorCount";
     let count = localStorage.getItem(visitorKey);
-    let randomIncrement = Math.floor(Math.random() * (3000 - 230 + 1)) + 230;
+    let randomIncrement = Math.floor(Math.random() * (3000 - 230 + 1)) + 1;
 
     if (!count) {
         count = 1; // First-time visitor
@@ -164,3 +202,23 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("count").textContent = count;
     document.getElementById("count").textContent = count; // Update the visitor count
 });
+// new effect for moods
+// Greeting Based on Time
+const hours = new Date().getHours();
+let greeting = "👋 Hello!";
+if (hours < 12) greeting = "🌅 Good Morning!";
+else if (hours < 18) greeting = "🌞 Good Afternoon!";
+else greeting = "🌙 Good Evening!";
+
+document.getElementById("greeting").textContent = greeting;
+
+// Live Time Update
+function updateTime() {
+    const now = new Date();
+    document.getElementById("liveTime").textContent =
+        `🕒 ${now.toLocaleTimeString()}`;
+}
+setInterval(updateTime, 1000);
+updateTime();
+
+
