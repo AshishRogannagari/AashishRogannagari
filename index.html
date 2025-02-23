@@ -71,17 +71,21 @@
             <div class="experience-grid">
                 <div class="experience-item">
                     <p class="about-text">
-                        AWS Certified Data Engineer with 4 years of experience in cloud computing, data engineering, and
-                        scalable data pipelines. With expertise in AWS-native services, I specialize in building and
-                        optimizing high-performance cloud architectures that support large-scale analytics, business
-                        intelligence, and AI-driven solutions.
+                        <li> AWS Certified Data Engineer with 4 years of experience in cloud computing, data
+                            engineering, and
+                            scalable data pipelines.
+                            With expertise in AWS-native services, I specialize in building and
+                            optimizing high-performance cloud architectures that support large-scale analytics, business
+                            intelligence, and AI-driven solutions.</li>
                     </p>
                     <p class="about-text">
-                        I have hands-on experience in SQL and Python for data transformation, querying, and
-                        optimization, as
-                        well as ETL workflows using AWS Glue and Step Functions for automated batch and real-time data
-                        processing. My expertise in AWS Redshift and Snowflake enables efficient data warehousing and
-                        analytics, while Git and streamline deployment and infrastructure automation.
+                        <li>I have hands-on experience in SQL and Python for data transformation, querying, and
+                            optimization, as
+                            well as ETL workflows using AWS Glue and Step Functions for automated batch and real-time
+                            data
+                            processing. My expertise in AWS Redshift and Snowflake enables efficient data warehousing
+                            and
+                            analytics, while Git and streamline deployment and infrastructure automation.</li>
                     </p>
                 </div>
             </div>
@@ -227,20 +231,25 @@
                 <h2 class="section-title">Contact Me</h2>
 
                 <div class="contact-wrapper">
-                    <!-- Contact Form -->
-                    <form id="contact-form" action="https://formspree.io/f/meoedkqj" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
 
+                    <form action="https://formspree.io/f/meoedkqj" method="POST"
+                        style="max-width: 300px; padding: 20px; border-radius: 8px; background-color: #f9f9f9;">
+                        <div class="form-group" style="margin-bottom: 15px;">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required
+                                style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 15px;">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required
+                                style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <textarea id="message" name="message" placeholder="Your Message" required
+                                style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; height: 100px;"></textarea>
+                        </div>
+                        <button type="submit" class="btn"
+                            style="background-color: #462d8a; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;">Send
+                            Message</button>
+                    </form>
                     <!-- Contact Info -->
                     <div class="contact-info">
                         <p><i class="fas fa-envelope"></i>
@@ -266,11 +275,10 @@
 <footer>
     <div class="container">
         <!-- Dynamic Copyright & Contact -->
-        <div class="footer-content">
-            <p>&copy; <span id="current-year"></span> Aashish Rogannagari. All rights reserved.</p>
-            <p id="visitor-count">Visitors: <span id="count">...</span></p>
+        <div class="footer-greeting">
+            <p id="greeting"></p>
+            <p id="liveTime"></p>
         </div>
-
         <!-- Social Media Icons -->
         <div class="footer-social">
             <a href="https://www.linkedin.com/in/aashishrogannagari/" target="_blank" class="social-icon">
@@ -283,10 +291,18 @@
                 <i class="fab fa-medium"></i>
             </a>
         </div>
-    </div>
+
+        <!-- Use Portfolio Button -->
+        <div class="footer-portfolio">
+            <a href="https://github.com/AshishRogannagari" class="portfolio-btn" target="_blank">
+                ⚡ Use Template
+            </a>
+        </div>
+        <div class="footer-content">
+            <p>🚀 From Earth to the Cloud ☁️ | Powered by Passion & Data | <span id="current-year"></span> &copy;
+                Aashish Rogannagari</p>
+        </div>
 </footer>
-
-
 <!-- Back to Top Button -->
 <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
 
