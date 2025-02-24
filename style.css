@@ -1,5 +1,6 @@
 /* Base styles */
 :root {
+    /* Portfolio colors */
     --primary-color: #462d8a;
     --secondary-color: #253978;
     --text-color: #1f2937;
@@ -11,6 +12,7 @@
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Base styles for dark theme */
 [data-theme="dark"] {
     --background: #121212;
     --text-color: #f4f4f4;
@@ -42,7 +44,7 @@ body {
     padding: 0 var(--spacing);
 }
 
-/* Navigation */
+/* Navigation bar */
 .navbar {
     position: fixed;
     top: 0;
@@ -60,14 +62,14 @@ body {
     padding: 1rem 0;
 }
 
-/* Profile Section - Same Background as Experience */
+/* Profile Section  Same Background as Experience */
 #about {
     background-color: #f3f4f6;
     /* Same as Experience Section */
     padding: 4rem 0;
 }
 
-/* ✨ Metallic Shine Effect */
+/*  Metallic Shine Effect */
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
@@ -94,7 +96,7 @@ body {
 }
 
 
-/* 🌟 Navbar Links - Keep Side by Side */
+/*  Navbar Links - Keep Side by Side */
 .nav-links {
     display: flex;
     gap: 20px;
@@ -102,7 +104,7 @@ body {
     list-style: none;
 }
 
-/* 🌟 Metallic Shine Effect for Navbar Links */
+/*  Metallic Shine Effect for Navbar Links */
 .nav-links a {
     text-decoration: none;
     font-size: 1rem;
@@ -122,7 +124,7 @@ body {
     transform: scale(1.1);
 }
 
-/* 🌟 Metallic Shine Animation */
+/*  Metallic Shine Animation */
 @keyframes metallicShine {
     0% {
         background-position: 0% 50%;
@@ -136,8 +138,6 @@ body {
         background-position: 0% 50%;
     }
 }
-
-
 
 /* Theme Toggle Button */
 .theme-toggle {
@@ -153,7 +153,7 @@ body {
     color: var(--primary-color);
 }
 
-/* 🚀 Hero Section - Animated Background */
+/* Hero Section - Animated Background */
 .hero {
     background: linear-gradient(-65deg, #3175a2, #eef0f3, #1d69ab, #809aca);
     background-size: 400% 400%;
@@ -163,7 +163,7 @@ body {
     animation: gradientAnimation 10s ease infinite;
 }
 
-/* 🔥 Animated Gradient Background */
+/*  Animated Gradient Background */
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -178,7 +178,7 @@ body {
     }
 }
 
-/* 🌟 Floating Profile Picture */
+/*  Floating Profile Picture */
 .profile-pic {
     width: 150px;
     height: 150px;
@@ -205,7 +205,7 @@ body {
 }
 
 
-/* 🌟 Neon Glow Social Icons */
+/*  Neon Glow Social Icons */
 .social-links {
     display: flex;
     justify-content: center;
@@ -240,7 +240,7 @@ body {
     color: var(--primary-color);
 }
 
-/* 🌟 Metallic Shine Effect for Section Titles */
+/*  Metallic Shine Effect for Section Titles */
 .section-title {
     font-size: 2rem;
     font-weight: bold;
@@ -533,8 +533,8 @@ footer {
     }
 }
 
-/* ✨ Underline Animation on Hover */
-/* ✨ Underline Animation on Hover */
+/*  Underline Animation on Hover */
+/*  Underline Animation on Hover */
 .nav-links a {
     position: relative;
     text-decoration: none;
@@ -558,7 +558,7 @@ footer {
     transform: translateX(-50%);
 }
 
-/* 🔥 Set Different Underline Widths */
+/*  Set Different Underline Widths */
 .nav-links a:nth-child(1):hover::after {
     width: 100%;
 }
@@ -588,7 +588,7 @@ footer {
     width: 50%;
 }
 
-/* 🌟 Typing Text Gradient Shine Effect */
+/*  Typing Text Gradient Shine Effect */
 #typing-text {
     font-size: 1.5rem;
     font-weight: 600;
@@ -599,7 +599,7 @@ footer {
     animation: metallicShine 4s infinite linear;
 }
 
-/* 🔥 Metallic Shine Animation */
+/* Metallic Shine Animation */
 @keyframes metallicShine {
     0% {
         background-position: 0% 50%;
@@ -614,7 +614,7 @@ footer {
     }
 }
 
-/* 🌟 Hero Name - Better Contrast with Existing Colors */
+/*  Hero Name - Better Contrast with Existing Colors */
 .hero h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -626,7 +626,7 @@ footer {
     animation: textShine 4s infinite linear;
 }
 
-/* ✨ Shine Animation */
+/*  Shine Animation */
 @keyframes textShine {
     0% {
         background-position: 0% 50%;
@@ -641,7 +641,7 @@ footer {
     }
 }
 
-/* ✅ Subtitle (Typing Text) - Using Theme Colors */
+/*  Subtitle (Typing Text) - Using Theme Colors */
 #typing-text {
     font-size: 1.3rem;
     font-weight: 600;
@@ -652,7 +652,7 @@ footer {
     animation: metallicShine 4s infinite linear;
 }
 
-/* 🎨 Social Icons - Matching Your Theme */
+/*  Social Icons - Matching Your Theme */
 .social-links a {
     color: #483789;
     /* Purple shade to match your existing theme */
@@ -660,14 +660,14 @@ footer {
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-/* 🔥 Icon Hover Effect */
+/*  Icon Hover Effect */
 .social-links a:hover {
     color: #2563eb;
     /* Blue hover effect */
     transform: scale(1.2);
 }
 
-/* ✨ Glowing Send Message Button */
+/*  Glowing Send Message Button */
 .contact-form button {
     background: linear-gradient(90deg, #2563eb, #483789);
     color: white;
@@ -687,7 +687,7 @@ footer {
     box-shadow: 0px 10px 25px rgba(72, 55, 137, 0.5);
 }
 
-/* 🌟 Preloader Full-Screen */
+/*  Preloader Full-Screen */
 #preloader {
     position: fixed;
     top: 0;
@@ -703,7 +703,7 @@ footer {
     transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
 
-/* 🌟 Full-Screen Preloader */
+/*  Full-Screen Preloader */
 #preloader {
     position: fixed;
     top: 0;
@@ -720,7 +720,7 @@ footer {
     transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
 
-/* 🌟 Preloader Full-Screen */
+/*  Preloader Full-Screen */
 #preloader {
     position: fixed;
     top: 0;
@@ -736,7 +736,7 @@ footer {
     transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
 
-/* 🔄 Loader Animation */
+/*  Loader Animation */
 .loader {
     width: 60px;
     height: 60px;
@@ -749,7 +749,7 @@ footer {
     animation: spin 1s linear infinite;
 }
 
-/* ✨ Spin Animation */
+/*  Spin Animation */
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -760,13 +760,13 @@ footer {
     }
 }
 
-/* 🔥 Hide Preloader (After Page Loads) */
+/*  Hide Preloader (After Page Loads) */
 .hidden {
     opacity: 0;
     visibility: hidden;
 }
 
-/* 🌟 Mission Loading Theme */
+/*  Mission Loading Theme */
 .loading-text {
     font-size: 1.3rem;
     font-weight: bold;
@@ -788,7 +788,7 @@ footer {
     transform: translateY(0);
 }
 
-/* 🔥 Repo & PyPI Stats Styling */
+/*  Repo & PyPI Stats Styling */
 .repo-stats,
 .pypi-stats {
     display: flex;
@@ -796,7 +796,7 @@ footer {
     margin-top: 8px;
 }
 
-/* 🚀 Smaller Google Colab & Jupyter Buttons */
+/*  Smaller Google Colab & Jupyter Buttons */
 .project-buttons {
     margin-top: 8px;
     display: flex;
@@ -814,7 +814,7 @@ footer {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-/* 🎯 Google Colab Button */
+/*  Google Colab Button */
 .colab-btn {
     background: linear-gradient(90deg, #ffcc00, #ff6600);
     box-shadow: 0px 2px 6px rgba(255, 102, 0, 0.3);
@@ -825,7 +825,7 @@ footer {
     box-shadow: 0px 4px 12px rgba(255, 102, 0, 0.5);
 }
 
-/* 📚 Jupyter Button */
+/*  Jupyter Button */
 .jupyter-btn {
     background: linear-gradient(90deg, #f37726, #fbbc05);
     box-shadow: 0px 2px 6px rgba(243, 119, 38, 0.3);
